@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Регистрация
+{% endblock %}
+
+
+{% block content %}
+<div class="content-section">
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            {{ form|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-primary my_login my_font_color" type="submit">Зарегистрироваться</button>
+        </div>
+    </form>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            <span class="my_font">Уже есть аккаунт? </span><a class="my_font_color" href="{% url 'login' %}">Вход</a>
+        </small>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,34 @@
+[
+  {
+    "fields": {
+      "name": "Все категории",
+      "slug": "all"
+    },
+    "model": "cars.categories",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "name": "Эконом",
+      "slug": "Econom"
+    },
+    "model": "cars.categories",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "name": "Комфорт",
+      "slug": "Comfort"
+    },
+    "model": "cars.categories",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "name": "Бизнес",
+      "slug": "Business"
+    },
+    "model": "cars.categories",
+    "pk": 4
+  }
+]

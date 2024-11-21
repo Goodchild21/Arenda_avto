@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block title %}
+    Условия аренды
+{% endblock %}
+
+
+{% block content %}
+<h2>Условия аренды</h2>
+    <br>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel_flex">
+            <img src="{% static 'images/slide_1.png' %}" class="d-block w-100 carousel_slides" alt="...">
+            <div class="carousel_text">
+              <h4>Страховой депозит</h4>
+              <hr>
+              <p>Мы отменили залоги, за исключением некоторых случаев, подробности уточняйте у менеджера.<br>
+              <br>
+              Компания вправе устанавливать страховой депозит в результате проверки ваших документов.<br>
+              <br>
+              Короче говоря, заплатить надо будет)))
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel_flex">
+            <img src="{% static 'images/slide_2.png' %}" class="d-block w-100 carousel_slides" alt="...">
+            <div class="carousel_text">
+              <h4>Возраст</h4>
+              <hr>
+              <p>Российская федерация странное государство! Поэтому мочить укропов, бухать и влезать в долги ты можешь с 18 лет.<br>
+              <br>
+              Но потрогать наши тачки закон этого государства разрешает нам установить на отметке с 21-ого года<br>
+              <br>
+              Мы так и сделали)))
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel_flex">
+            <img src="{% static 'images/slide_3.png' %}" class="d-block w-100 carousel_slides" alt="...">
+            <div class="carousel_text">
+              <h4>Ограничения для женщин</h4>
+              <hr>
+              <p>Минимальный опыт вождения, а не содержания прав в сумочке с документами 3 года!!!<br>
+              <br>
+              Для женщин - держателей дисконтных карт Красное Белое, допускается аренда только с наличием внебрачного сына в салоне (как показано на снимке).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel_flex">
+            <img src="{% static 'images/slide_4.png' %}" class="d-block w-100 carousel_slides" alt="...">
+            <div class="carousel_text">
+              <h4>Уголок националиста</h4>
+              <hr>
+              <p>При наличии любого другого паспорта, отличающегося от паспорта гражданина РФ, вам везде зеленый свет и сюжет на первом канале о том как американец приехал в Россию, чтобы взять авто на прокат ведь наш прокат на голову выше зарубежного<br>
+              <br>
+              Если у Вас паспорт гражданина РФ, то нужны еще и права гражданина РФ
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br>
+{% endblock %}

@@ -1,0 +1,53 @@
+[
+  {
+    "fields": {
+      "category": 2,
+      "description": "KIA picanto description",
+      "image": "cars_pics/picanto1.jpeg",
+      "name": "KIA picanto",
+      "price": "2500",
+      "slug": "kia-picanto-1"
+    },
+    "model": "cars.products",
+    "pk": 1
+  },
+
+  {
+    "fields": {
+      "category": 3,
+      "description": "TOYOTA camry description",
+      "image": "cars_pics/camry1.jpg",
+      "name": "TOYOTA camry",
+      "price": "4000",
+      "slug": "toyota-camry-1"
+    },
+    "model": "cars.products",
+    "pk": 2
+  },
+
+  {
+    "fields": {
+      "category": 4,
+      "description": "RANGE ROVER Sport description",
+      "image": "cars_pics/range1.jpeg",
+      "name": "RANGE ROVER Sport",
+      "price": "10000",
+      "slug": "range-rover-1"
+    },
+    "model": "cars.products",
+    "pk": 3
+  },
+
+  {
+    "fields": {
+      "category": 2,
+      "description": "Skoda Fabia description",
+      "image": "cars_pics/fabia1.webp",
+      "name": "Skoda Fabia",
+      "price": "2500",
+      "slug": "skoda-fabia-1"
+    },
+    "model": "cars.products",
+    "pk": 4
+  }
+]

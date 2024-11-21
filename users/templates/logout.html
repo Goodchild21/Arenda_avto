@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content my_modal">
+            <div class="modal-header">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="content-section">
+                    <p>Вы вышли из своей учетной записи</p>
+                    <small>
+                        <span class="my_font">Вернуться в аккаунт? </span><a class="my_font_color" href="{% url 'login' %}">Войти</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

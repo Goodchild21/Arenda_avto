@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="content-section profile_form">
+      <div class="media">
+        <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
+        <div class="media-body">
+          <h2 class="account-heading">{{ user.username }}</h2>
+        </div>
+      </div>
+       <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <fieldset class="form-group">
+              {{ u_form|crispy }}
+              {{ p_form|crispy }}
+          </fieldset>
+          <div class="form-group">
+              <button class="btn btn-outline-info my_login my_font_color" type="submit">Обновить</button>
+          </div>
+      </form>
+    </div>
+
+    <div class="modal fade" id="{{ msgs }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content my_modal">
+                <div class="modal-header">
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-section">
+                        {% if messages %}
+                            {% for message in messages %}
+                                {{ message }}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
